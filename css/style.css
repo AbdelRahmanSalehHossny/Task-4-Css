@@ -1,0 +1,88 @@
+* {
+    list-style: none;
+}
+:root {
+    --background-color:#ccc;
+    --padding:20px;
+    --margin:25px;
+}
+.parent {
+    width: 600px;
+    height: 300px;
+    background-color: #ddd;
+    margin: 35px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 20px;
+    text-align: center;
+}
+.parent div {
+    background-color: #F44336;
+    color: white;
+    width: 192px;
+    padding: 10px 0;
+}
+
+
+
+
+.page {
+    background-color: #ddd;
+    overflow: hidden;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo,
+.links {
+    background-color: var(--background-color);
+    padding: var(--padding);
+    margin: var(--margin);
+}
+.logo,
+li,
+.content,
+.sidebar,
+.copyright,
+.design {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.logo {
+    width: 5%;
+    text-align: center;
+}
+.links {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    width: 90%;
+}
+.links li {
+    margin-left: 15px;
+}
+.main-area {
+    display: flex;
+    justify-content: space-between;
+}
+.main-area div {
+    background-color: var(--background-color);
+    padding: var(--padding);
+    margin: var(--margin);
+    width: calc(100% / 5);
+}
+.content {
+    flex-grow: 1;
+    height: 600px;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background-color);
+    padding: var(--padding);
+    margin: var(--margin);
+}
